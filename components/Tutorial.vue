@@ -115,7 +115,9 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from '#imports'
+
 export default defineComponent({
   name: 'NuxtTutorial',
 })
