@@ -1,6 +1,6 @@
-import { NuxtConfig } from '@nuxt/types'
+import { defineNuxtConfig } from '@nuxt/bridge'
 
-const nuxtConfig: NuxtConfig = {
+export default defineNuxtConfig({
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-2-template',
@@ -27,12 +27,8 @@ const nuxtConfig: NuxtConfig = {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
-    // https://composition-api.nuxtjs.org/
-    '@nuxtjs/composition-api/module',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -40,6 +36,4 @@ const nuxtConfig: NuxtConfig = {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-}
-
-export default nuxtConfig
+})
