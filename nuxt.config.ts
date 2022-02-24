@@ -1,6 +1,34 @@
-import { NuxtConfig } from '@nuxt/types'
+import { defineNuxtConfig } from '@nuxt/bridge'
 
-const nuxtConfig: NuxtConfig = {
+export default defineNuxtConfig({
+  // https://v3.nuxtjs.org/getting-started/bridge#feature-flags
+  bridge: {
+    // -- Opt-in features --
+    // Use Vite as the bundler instead of Webpack 4
+    vite: true,
+    // Enable Nuxt 3 compatible useMeta
+    // meta: true,
+    // -- Default features --
+    // Use legacy server instead of Nitro
+    // nitro: false,
+    // Disable nuxt 3 compatible `nuxtApp` interface
+    // app: false,
+    // Disable composition API support
+    // capi: false,
+    // ... or just disable legacy composition API support
+    // capi: {
+    //   legacy: false
+    // },
+    // Do not transpile modules
+    // transpile: false,
+    // Disable <script setup> support
+    // scriptSetup: false,
+    // Disable composables auto importing
+    // autoImports: false,
+    // Do not warn about module incompatibilities
+    // constraints: false
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-2-template',
@@ -27,19 +55,16 @@ const nuxtConfig: NuxtConfig = {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
-    // https://composition-api.nuxtjs.org/
-    '@nuxtjs/composition-api/module',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
-}
-
-export default nuxtConfig
+  build: {
+    // https://github.com/nuxt/framework/issues/3221#issuecomment-1044370689
+    transpile: ['@nuxt/bridge-edge'],
+  },
+})

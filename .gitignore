@@ -88,3 +88,7 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Nuxt.js v3 build assets
+# https://v3.nuxtjs.org/getting-started/bridge/#exclude-built-nitro-folder-from-git
+.output
