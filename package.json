@@ -21,11 +21,7 @@
   },
   "dependencies": {
     "core-js": "^3.19.3",
-    "nuxt-edge": "latest",
-    "vue": "^2.6.14",
-    "vue-server-renderer": "^2.6.14",
-    "vue-template-compiler": "^2.6.14",
-    "webpack": "^4.46.0"
+    "nuxt-edge": "latest"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.3",
