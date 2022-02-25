@@ -7,8 +7,8 @@ module.exports = {
     // 生CSSは一切書かないのであれば
     // 依存関係/configから消してもいいと思います
     'stylelint-config-standard',
-    'stylelint-config-recommended-vue',
     'stylelint-config-recommended-scss',
+    'stylelint-config-recommended-vue/scss',
     'stylelint-config-recess-order',
     'stylelint-rscss/config',
     'stylelint-config-prettier',
