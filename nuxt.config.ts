@@ -17,7 +17,7 @@ const nuxtConfig: NuxtConfig = {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['assets/scss/app.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -33,6 +33,9 @@ const nuxtConfig: NuxtConfig = {
     '@nuxtjs/stylelint-module',
     // https://composition-api.nuxtjs.org/
     '@nuxtjs/composition-api/module',
+    // https://github.com/nuxt/postcss8
+    // https://github.com/nuxt/nuxt.js/issues/8087
+    '@nuxt/postcss8',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
