@@ -1,14 +1,22 @@
 /* Setting Layer */
 
+// NOTE:
+// 社内ITCSS-RSCSSガイドラインに基づいて命名してください
+// 必ず下記リンクを一読すること
+// https://docs.google.com/document/d/1kFQ-PGBg2nW1C2jaaG_3wCgNEOYTlc9HrzjjReL5Il0/edit#bookmark=id.omnyka6dfi72
+// stylelint-disable-next-line scss/comment-no-empty
+//
+// (カラーの系統)-(カラー名)
+// ex)
+// カラーコード: #bf13cd
+// $purple-awkward-purple: #bf13cd;
+
 /* black */
-$black: #000;
+$black-black: #000;
 $black-dark-grey: #363636;
 
-/* grey */
-$grey: #808080;
-
 /* white */
-$white: #ffffff;
+$white-white: #ffffff;
 $white-dr-white: #fafafa;
 
 /* blue */
